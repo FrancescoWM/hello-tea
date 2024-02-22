@@ -4,12 +4,12 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Ciao Mondo!');
+  res.send('Hello tea!');
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`App in ascolto sulla porta ${PORT}`);
+  console.log(`App on ${PORT}`);
 });
 function helloTea(name) {
     return `Hello, ${name}!`;
